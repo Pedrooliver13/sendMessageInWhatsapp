@@ -27,7 +27,7 @@ const sendMessageInWhatsApp = async (text) => {
   }
 
   for (const line of listOfLines) {
-    console.log("line", line);
+    console.log(line);
 
     textarea.focus();
     document.execCommand("insertText", false, line);
