@@ -26,7 +26,7 @@ const sendMessageInWhatsApp = async (text) => {
     return console.error("Error: textarea or text not found!");
   }
 
-  listOfLines.forEach(async (line) => {
+  for (const line of listOfLines) {
     console.log("line", line);
 
     textarea.focus();
@@ -40,7 +40,7 @@ const sendMessageInWhatsApp = async (text) => {
     if (listOfLines.indexOf(line) !== listOfLines.length - 1) {
       await new Promise((resolve) => setTimeout(resolve, 250));
     }
-  });
+  }
 
   return listOfLines.length;
 };
