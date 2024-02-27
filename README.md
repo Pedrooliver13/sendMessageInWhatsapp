@@ -16,7 +16,7 @@
 ```
 
 ## :rocket: Tecnologias
--  [JavaScript](https://reactjs.org/)
+-  [JavaScript]()
 
 ---
 
